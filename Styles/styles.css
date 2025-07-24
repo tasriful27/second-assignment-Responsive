@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     height: 71px;
+    margin-top: 30px;
 }
 .nav-links{
     display: flex;
@@ -33,6 +34,7 @@
 
   .nav {
     justify-content: space-between;
+    margin-top: 30px;
   }
 
   .nav-links {
@@ -263,6 +265,7 @@ margin-top: -100px;
 margin-left: -200px;
 margin-bottom: 450px;
 }
+ 
 
       /* challenge-section */
      @media (max-width: 576px) {
