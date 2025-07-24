@@ -24,7 +24,8 @@
 
        /* Nav section Responsive */
 
-       @media (max-width: 768px) {
+       @media (max-width: 576px) {
+
   .hide-item {
     display: none;  
   }
@@ -70,8 +71,9 @@ color: rgb(233, 90, 8);
 }
 
           /* Hero section Responsive */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .hero {
+    justify-items: center;
     flex-direction: column-reverse;  
     text-align: center;
     gap: 30px;
@@ -195,7 +197,10 @@ width: 100%;
 }
 
           /* Menu Responsive */
-@media (max-width:768px) {
+@media (max-width: 576px) {
+  .menu-section{
+    justify-items: center;
+  }
   .menu-section {
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
@@ -260,7 +265,7 @@ margin-bottom: 450px;
 }
 
       /* challenge-section */
-     @media (max-width: 768px) {
+     @media (max-width: 576px) {
   .challenge-section {
     max-width: 20%;
     grid-template-columns: 1fr;
@@ -336,8 +341,9 @@ margin-bottom: 450px;
 }
 
          /* Banner section Responsive */
-         @media (max-width: 768px) {
+         @media (max-width: 576px) {
   .banner{
+    justify-items: center;
   width: 500px;
 height: 275px;
   }
@@ -403,7 +409,7 @@ color: rgba(0, 0, 0, 0.5);
 }
 
      /* Footer section Responsive */
-     @media (max-width: 768px) {
+     @media (max-width: 576px) {
   .footer {
     flex-direction: column;
     align-items: left;
