@@ -22,7 +22,22 @@
     gap: 48px;
 }
 
- 
+       /* Nav section Responsive */
+
+       @media (max-width: 768px) {
+  .hide-item {
+    display: none;  
+  }
+
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+}
 
 
 /* Hero section */
@@ -53,6 +68,36 @@ max-width: 85%;
 color: rgb(233, 90, 8); 
 
 }
+
+          /* Hero section Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;  
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    line-height: 50px;
+    padding-left: 20px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 100%;
+    padding-left: 20px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
 /* Menu Section */
 .menu-header h2{
 text-align: center;
@@ -132,8 +177,8 @@ letter-spacing: 0%;
 width: 81px;
 height: 16px;
 align-items: center;
-gap: 20;
-padding: 0px;
+/* gap: 20;
+padding: 0px; */
 margin: 20px 0px;
 color: rgb(17, 17, 17);
 font-size: 22px;
@@ -149,12 +194,39 @@ width: 100%;
     
 }
 
+          /* Menu Responsive */
+@media (max-width:768px) {
+  .menu-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .menu-items {
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.menu-items img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.menu-items button{
+  width: 200px;
+}
+ 
+}
+
+
+
 /* challenge-section */
 .challenge-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    margin-left: 25px;
     margin-top: 200px;
     width: 100%;
      
@@ -165,24 +237,56 @@ width: 100%;
     font-weight: 700;
     line-height: 68px;
     margin-bottom: 66px;
+    text-align: center;
 }
 .challenge-list{
+  width: 500px;
 color: rgba(0, 0, 0, 0.5); 
 font-size: 22px;
 font-weight: 400;
 line-height: 27px;
 letter-spacing: 0%;
 padding: -50px;
-margin-left: 10px;
+margin-left: 5px;
 }
 .trusted-badge{
 width: 286px;
 height: 286px;
-z-index: -1;
+position: absolute;
 margin-right: -300px;
 margin-top: -100px;
 margin-left: -200px;
 margin-bottom: 450px;
+}
+
+      /* challenge-section */
+     @media (max-width: 768px) {
+  .challenge-section {
+    max-width: 20%;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px 20px; 
+    margin-top: 35px; 
+  }
+  .challenge-section h2{
+    width: 480px;
+    font-size: 25px;
+    margin-bottom: 33px;
+    margin-top: 20px;
+  }
+  .challenge-img{
+    max-width: 400px;
+    margin-left: -30px;
+  }
+.challenge-list{
+  width: 400px;
+}
+  .trusted-badge {
+    display: none;
+  }
+   
 }
 
 
@@ -231,6 +335,20 @@ margin-bottom: 450px;
      
 }
 
+         /* Banner section Responsive */
+         @media (max-width: 768px) {
+  .banner h1 {
+    font-size: 28px;
+    margin-top: 100px;
+  }
+  .banner input[type="email"] {
+    width: 280px;
+  }
+
+  .banner button {
+    width: 103px;
+  }
+}
 
 
         /* Footer section */
@@ -268,9 +386,7 @@ margin-bottom: 450px;
     text-decoration: none;
     color: rgb(107, 114, 128);
     gap: 48px;
-    padding: 40px;
-    width: 85px;
-    height: 248px;
+   
 }
 .footer-links li a:hover{
     color: red;
@@ -282,17 +398,21 @@ height: 81px;
 color: rgba(0, 0, 0, 0.5);
 }
 
-/* Responsive Footer */
-@media screen and (max-width: 767px) {
-    .footer {
-         width: 50%;
-         margin-bottom: 30px;
-    }
+     /* Footer section Responsive */
+     @media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    gap: 5px;
+  }
 
-}
-@media screen and (max-width: 576px) {
-.footer {
-         width: 100%;
-         
-    }
-}
+  .footer-links {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .footer-social a {
+    margin: 10px;
+  }
+     }
