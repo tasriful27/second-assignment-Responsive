@@ -201,7 +201,7 @@ width: 100%;
     gap: 5px;
   }
   .menu-items {
-  width: 100%;
+ max-width: 20%;
   max-width: 200px;
   margin: auto;
   display: flex;
@@ -337,7 +337,11 @@ margin-bottom: 450px;
 
          /* Banner section Responsive */
          @media (max-width: 768px) {
-  .banner h1 {
+  .banner{
+  width: 500px;
+height: 275px;
+  }
+          .banner h1 {
     font-size: 28px;
     margin-top: 100px;
   }
